@@ -374,6 +374,9 @@ section {
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
+.about .title::after{
+  content: "who i am";
+}
 .about h3 {
   font-weight: 400;
   font-size: 26px;
@@ -410,6 +413,37 @@ section {
 }
 .shr{
   margin:0;
+}
+section .title{
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+section .title::before{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+section .title::after{
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #25564f;
+  padding: 0 5px;
+  background: #fff;
+  transform: translateX(-50%);
 }
 
 
